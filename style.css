@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@600&display=swap');
+
+* {
+    padding: 0%;
+    margin: 0%;
+    font-family: "Karla";
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(204, 43%, 93%);
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    max-width: 700px;
+    height: 450px;
+    border-radius: 0.5rem;
+    overflow: hidden;
+    box-shadow: .5rem 0.5rem 0.5rem 0.1rem rgba(0, 0, 0, 0.349);
+}
+
+.row {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    height: 55%;
+} 
+
+.coloum {
+    display: flex;
+    flex-direction: column;
+    padding: 0% 5% 0% 5%;
+    height: 45%;
+    justify-content: space-evenly;   
+    background-color: white;
+}
+
+.row_div{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 0% 5% 0px 5%; 
+    height: 100%;
+    width: 50%; 
+    padding: 0% 5% 0% 5%;
+}
+.money {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0.5rem;
+    width: 100%;
+    background-color: hsl(71, 73%, 54%);
+    color: white;
+    height: 50px;
+    cursor: pointer;
+}
+
+@media (max-width:599px) {
+    .card {
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+        max-width: 375px;
+        height: 750px;
+        border-radius: 0.5rem;
+        overflow: hidden;
+        box-shadow: .5rem 0.5rem 0.5rem 0.1rem rgba(0, 0, 0, 0.349);
+        margin: 30px;
+        min-width: 253px;
+    }
+    
+    .row {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        height: 500px;
+    } 
+    
+    .coloum {
+        padding: 0% 5% 0% 5%;
+        height: 250px;
+        justify-content: space-evenly;   
+        background-color: white;
+    }
+    
+    .row_div{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        padding: 0% 5% 0px 5%; 
+        height: 250px;
+        width: 90%; 
+        padding: 0% 5% 0% 5%;
+    }
+}
